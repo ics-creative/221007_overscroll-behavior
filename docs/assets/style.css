@@ -1,40 +1,36 @@
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 8px 16px;
-  font-size: 16px;
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  background-color: #646cff;
-  color: #fff;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-
-button:hover {
-  border-color: #646cff;
-}
-
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-a:hover {
-  color: #646cff;
-}
-
 * {
   box-sizing: border-box;
 }
 
 p {
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+a:hover {
+  color: #646cff;
+}
+
+button {
+  padding: 8px 16px;
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  background-color: #646cff;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus, button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
 }
 
 ul,
@@ -45,14 +41,15 @@ li {
 }
 
 body {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  margin: 0;
-  min-height: 200vh;
+  min-height: 130vh;
+  min-height: 130dvh;
   padding-top: 64px;
-  line-height: 1.5;
+  margin: 0;
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 15px;
+  line-height: 1.5;
   color: #424242;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 body.is-hideScrollbar {
   -ms-overflow-style: none;
@@ -63,34 +60,34 @@ body.is-hideScrollbar::-webkit-scrollbar {
 
 .heading {
   margin-bottom: 24px;
-  font-weight: bold;
   font-size: 32px;
+  font-weight: bold;
 }
 
 .section {
   width: 100%;
-  max-width: 800px;
-  margin: 0 auto 104px;
+  max-width: 640px;
   padding: 0 24px;
+  margin: 0 auto 104px;
 }
 
 .containerList {
-  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
+  width: 100%;
 }
 
 .container {
-  height: 200px;
   width: 100%;
-  overflow-y: auto;
-  font-size: 13px;
-  border-radius: 0 0 4px 4px;
+  height: 200px;
   padding: 8px 16px;
-  border: solid 4px #424242;
-  color: #424242;
+  overflow-y: auto;
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  color: #424242;
+  border: solid 4px #424242;
+  border-radius: 0 0 4px 4px;
 }
 .container__auto {
   overscroll-behavior-y: contain;
@@ -104,31 +101,36 @@ body.is-hideScrollbar::-webkit-scrollbar {
 
 .label {
   display: block;
-  border-radius: 4px 4px 0 0;
   padding: 8px 16px;
-  background-color: #424242;
-  color: #fff;
-  line-height: 1;
   font-size: 20px;
+  line-height: 1;
+  color: #fff;
   vertical-align: bottom;
+  background-color: #424242;
+  border-radius: 4px 4px 0 0;
+}
+
+.pageDemo01 {
+  overscroll-behavior-y: none;
 }
 
 .baseDialog {
+  max-width: 400px;
   height: 200px;
   overscroll-behavior-y: contain;
 }
 
 .menuDialog {
   width: 100%;
-  height: 100%;
   max-width: 100%;
+  height: 100%;
   max-height: 100%;
-  border: none;
   padding: 0;
   margin: 0;
-  background-color: rgba(0, 0, 0, 0.85);
   overflow-y: auto;
   overscroll-behavior-y: contain;
+  background-color: rgba(0, 0, 0, 0.85);
+  border: none;
   -ms-overflow-style: none;
 }
 .menuDialog::backdrop {
@@ -138,18 +140,18 @@ body.is-hideScrollbar::-webkit-scrollbar {
   display: none;
 }
 .menuDialog_wrapper {
-  height: calc(100% + 1px);
   width: 100%;
+  height: calc(100% + 1px);
   padding: 24px;
 }
 .menuDialog_menu {
-  margin-bottom: 24px;
   display: grid;
   grid-template-columns: 1fr;
   gap: 16px;
-  color: #fff;
+  margin-bottom: 24px;
   font-size: 32px;
   font-weight: bold;
+  color: #fff;
 }
 
 .iframe {
@@ -157,7 +159,7 @@ body.is-hideScrollbar::-webkit-scrollbar {
   height: 300px;
 }
 
-.page_iframe {
+.pageIframe {
   padding: 24px;
   margin: 0;
   overscroll-behavior-y: contain;
