@@ -14,7 +14,6 @@ export default defineConfig({
         demo01: resolve(__dirname, "src/demo01/index.html"),
         demo02: resolve(__dirname, "src/demo02/index.html"),
         demo03: resolve(__dirname, "src/demo03/index.html"),
-        demo04: resolve(__dirname, "src/demo04/index.html"),
         iframe: resolve(__dirname, "src/iframe/iframe.html"),
       },
       output: {

@@ -9,8 +9,7 @@ p {
 
 a {
   color: inherit;
-  text-decoration: none;
-
+  text-decoration: underline;
   &:hover {
     color: #646cff;
   }
@@ -45,8 +44,6 @@ li {
 }
 
 body {
-  min-height: 130vh;
-  min-height: 130dvh;
   padding-top: 64px;
   margin: 0;
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -64,20 +61,25 @@ body {
   }
 }
 
+.toc {
+  display: grid;
+  grid-row-gap: 10px;
+}
+
 .heading {
   margin-bottom: 24px;
   font-size: 32px;
   font-weight: bold;
 }
 
-.section {
+.wrapper {
   width: 100%;
   max-width: 640px;
   padding: 0 24px;
   margin: 0 auto 104px;
 }
 
-.containerList {
+.demoList {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
@@ -94,10 +96,7 @@ body {
   color: #424242;
   border: solid 4px #424242;
   border-radius: 0 0 4px 4px;
-
-  &__auto {
-    overscroll-behavior-y: contain;
-  }
+  overscroll-behavior-y: auto;
 
   &__contain {
     overscroll-behavior-y: contain;
@@ -117,4 +116,10 @@ body {
   vertical-align: bottom;
   background-color: #424242;
   border-radius: 4px 4px 0 0;
+}
+
+.footer {
+  width: 100%;
+  padding: 24px;
+  margin: 80vh auto 0;
 }
