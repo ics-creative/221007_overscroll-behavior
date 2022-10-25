@@ -41,8 +41,7 @@ li {
 }
 
 body {
-  padding-top: 64px;
-  margin: 0;
+  margin: 32px 0 0;
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 15px;
   line-height: 1.5;
@@ -71,7 +70,7 @@ body.is-hideScrollbar::-webkit-scrollbar {
   width: 100%;
   max-width: 640px;
   padding: 0 24px;
-  margin: 0 auto 104px;
+  margin: 0 auto 64px;
 }
 
 .demoList {

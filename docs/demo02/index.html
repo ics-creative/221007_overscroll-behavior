@@ -3,24 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DEMO_02: dialogタグの例</title>
+    <title>DEMO_02: 画面固定のUI</title>
     
     <script type="module" crossorigin src="../assets/demo02.js"></script>
     <link rel="stylesheet" href="../assets/index.css">
   </head>
   <body>
     <div class="wrapper">
-      <p class="heading">dialog要素の例</p>
+      <p class="heading">ダイアログの例</p>
+      <p>overscroll-behavior: contain;</p>
       <dialog class="baseDialog js-dialog-content">
         <div>
           <p>ダミーのテキストです。にわかにくっきり白いその羽根は前の方で起こって、それからしばらくしいんとしました。それもほんのちょっとの間、川と汽車との間から、ぼくずいぶん泳いだぞと言いながら暗い戸口を出ました。お前は夢の中でなしに、ほんとうのほんとうのほんとうのほんとうのさいわいをさがしに行く。坂の下に来てくださいその人はわらいました。そら鳥捕りは、こんどはぼくのお母さんだよカムパネルラはこおどりしました。ぼくはおっかさんが病気なんですかジョバンニは胸をおどらせて言いました。ただたくさんのくるみの木がほとんどいちめんに植えられて、心配していらっしゃるんですかいや、証明するに要るんだ。それはひる学校で見たわ姉は細い銀いろの空から、さっき見たようにぶっきらぼうに言いました。</p>
         </div>
-        <button class="js-dialog-close">Cancel</button>
+        <button class="js-dialog-close">閉じる</button>
       </dialog>
       <button class="js-dialog-open">ダイアログを開く</button>
     </div>
     <div class="wrapper">
-      <p class="heading">dialog要素の例（全画面）</p>
+      <p class="heading">モバイルメニューの例</p>
+      <p>overscroll-behavior: contain;</p>
       <dialog class="menuDialog js-menuDialog-content">
         <div class="menuDialog_wrapper">
           <nav>
@@ -42,13 +44,13 @@
               </li>
             </ul>
           </nav>
-          <button class="js-menuDialog-close">Cancel</button>
+          <button class="js-menuDialog-close">閉じる</button>
         </div>
       </dialog>
-      <button class="js-menuDialog-open">メニューダイアログを開く</button>
+      <button class="js-menuDialog-open">モバイルメニューを開く</button>
     </div>
     <footer class="footer">
-      <a href="../">目次一覧へ戻る</a>
+      <a href="../">目次へ戻る</a>
     </footer>
 
     
