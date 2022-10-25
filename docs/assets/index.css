@@ -91,6 +91,7 @@ body.is-hideScrollbar::-webkit-scrollbar {
   border: solid 4px #424242;
   border-radius: 0 0 4px 4px;
   overscroll-behavior: auto;
+  resize: none;
 }
 .container__contain {
   overscroll-behavior: contain;
