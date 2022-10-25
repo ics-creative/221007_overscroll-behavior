@@ -96,6 +96,7 @@ body {
   border: solid 4px #424242;
   border-radius: 0 0 4px 4px;
   overscroll-behavior: auto;
+  resize: none;
 
   &__contain {
     overscroll-behavior: contain;
