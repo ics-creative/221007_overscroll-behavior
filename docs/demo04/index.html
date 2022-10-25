@@ -3,22 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DEMO_03: html要素、body要素の例</title>
+    <title>DEMO_03: iframe要素の例</title>
     
-    <style>
-      /* demo03用のスタイル */
-      /* chromium系のブラウザはbodyに指定する */
-      html,
-      body {
-        overscroll-behavior: none;
-      }
-    </style>
     <link rel="stylesheet" href="../assets/index.css">
   </head>
   <body>
     <div class="wrapper">
-      <p class="heading">html要素、body要素の例</p>
-      <p>overscroll-behavior: none;</p>
+      <p class="heading">iframe要素の例</p>
+      <p class="label">overscroll-behavior: contain</p>
+      <iframe
+        class="iframe"
+        src="https://ics-creative.github.io/221007_overscroll-behavior/iframe/iframe.html"
+      ></iframe>
     </div>
     <footer class="footer">
       <a href="../">目次一覧へ戻る</a>

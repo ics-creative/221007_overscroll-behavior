@@ -91,13 +91,13 @@ body.is-hideScrollbar::-webkit-scrollbar {
   color: #424242;
   border: solid 4px #424242;
   border-radius: 0 0 4px 4px;
-  overscroll-behavior-y: auto;
+  overscroll-behavior: auto;
 }
 .container__contain {
-  overscroll-behavior-y: contain;
+  overscroll-behavior: contain;
 }
 .container__none {
-  overscroll-behavior-y: none;
+  overscroll-behavior: none;
 }
 
 .label {
@@ -120,7 +120,7 @@ body.is-hideScrollbar::-webkit-scrollbar {
 .baseDialog {
   max-width: 400px;
   height: 200px;
-  overscroll-behavior-y: contain;
+  overscroll-behavior: contain;
 }
 
 .menuDialog {
@@ -131,13 +131,13 @@ body.is-hideScrollbar::-webkit-scrollbar {
   padding: 0;
   margin: 0;
   overflow-y: auto;
-  overscroll-behavior-y: contain;
-  background-color: rgba(0, 0, 0, 0.85);
+  overscroll-behavior: contain;
+  background-color: transparent;
   border: none;
   -ms-overflow-style: none;
 }
 .menuDialog::backdrop {
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.85);
 }
 .menuDialog::-webkit-scrollbar {
   display: none;
@@ -160,10 +160,11 @@ body.is-hideScrollbar::-webkit-scrollbar {
 .iframe {
   width: 100%;
   height: 300px;
+  overscroll-behavior: contain;
 }
 
 .pageIframe {
   padding: 24px;
   margin: 0;
-  overscroll-behavior-y: contain;
+  overscroll-behavior: contain;
 }
