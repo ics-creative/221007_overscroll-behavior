@@ -17,6 +17,7 @@
   background-color: transparent;
   border: none;
   -ms-overflow-style: none;
+  scrollbar-width: none;
 
   &::backdrop {
     background-color: rgba(0, 0, 0, 0.85);

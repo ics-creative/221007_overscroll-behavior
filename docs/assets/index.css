@@ -135,6 +135,7 @@ body.is-hideScrollbar::-webkit-scrollbar {
   background-color: transparent;
   border: none;
   -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 .menuDialog::backdrop {
   background-color: rgba(0, 0, 0, 0.85);
