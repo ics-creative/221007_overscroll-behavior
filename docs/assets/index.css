@@ -144,6 +144,7 @@ body.is-hideScrollbar::-webkit-scrollbar {
   width: 100%;
   height: calc(100% + 1px);
   display: flex;
+  padding: 24px;
   justify-content: center;
   align-items: center;
 }
