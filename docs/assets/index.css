@@ -129,7 +129,6 @@ body.is-hideScrollbar::-webkit-scrollbar {
   padding: 0;
   margin: 0;
   overflow-y: auto;
-  overscroll-behavior: contain;
   background-color: transparent;
   border: none;
   -ms-overflow-style: none;
@@ -140,6 +139,9 @@ body.is-hideScrollbar::-webkit-scrollbar {
   display: none;
 }
 
+.baseDialog {
+  overscroll-behavior: none;
+}
 .baseDialog_wrapper {
   width: 100%;
   height: calc(100% + 1px);
@@ -167,6 +169,9 @@ body.is-hideScrollbar::-webkit-scrollbar {
   margin-top: 16px;
 }
 
+.menuDialog {
+  overscroll-behavior: contain;
+}
 .menuDialog::backdrop {
   background-color: rgba(0, 0, 0, 0.85);
 }
