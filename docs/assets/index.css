@@ -48,15 +48,6 @@ body {
   color: #424242;
   background-color: #fff;
 }
-body.is-openModal {
-  overflow: hidden;
-}
-body.is-hideScrollbar {
-  -ms-overflow-style: none;
-}
-body.is-hideScrollbar::-webkit-scrollbar {
-  display: none;
-}
 
 .toc {
   display: grid;
@@ -138,6 +129,10 @@ body.is-hideScrollbar::-webkit-scrollbar {
 .menuDialog::-webkit-scrollbar {
   display: none;
 }
+.baseDialog::backdrop,
+.menuDialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.85);
+}
 
 .baseDialog {
   overscroll-behavior: none;
@@ -171,9 +166,6 @@ body.is-hideScrollbar::-webkit-scrollbar {
 
 .menuDialog {
   overscroll-behavior: contain;
-}
-.menuDialog::backdrop {
-  background-color: rgba(0, 0, 0, 0.85);
 }
 .menuDialog_wrapper {
   width: 100%;

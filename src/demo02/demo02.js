@@ -19,7 +19,7 @@ close.addEventListener("click", () => {
 });
 
 /**
- * モバイルメニューの実装
+ * ハンバーガーメニューの実装
  */
 const menuContent = document.querySelector(".js-menuDialog-content");
 const menuOpen = document.querySelector(".js-menuDialog-open");
@@ -28,12 +28,10 @@ const menuClose = document.querySelector(".js-menuDialog-close");
 menuOpen.addEventListener("click", () => {
   if (typeof menuContent.showModal === "function") {
     menuContent.showModal();
-    document.body.classList.add("is-hideScrollbar");
   } else {
     alert("The <dialog> API is not supported by this browser");
   }
 });
 menuClose.addEventListener("click", () => {
   menuContent.close();
-  document.body.classList.remove("is-hideScrollbar");
 });

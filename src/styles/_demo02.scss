@@ -15,6 +15,10 @@
   &::-webkit-scrollbar {
     display: none;
   }
+
+  &::backdrop {
+    background-color: rgba(0, 0, 0, 0.85);
+  }
 }
 
 // demo02用のスタイル
@@ -50,10 +54,6 @@
 
 .menuDialog {
   overscroll-behavior: contain;
-
-  &::backdrop {
-    background-color: rgba(0, 0, 0, 0.85);
-  }
 
   &_wrapper {
     width: 100%;
