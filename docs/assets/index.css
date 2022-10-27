@@ -48,6 +48,9 @@ body {
   color: #424242;
   background-color: #fff;
 }
+body.is-openModal {
+  overflow: hidden;
+}
 body.is-hideScrollbar {
   -ms-overflow-style: none;
 }
@@ -117,12 +120,7 @@ body.is-hideScrollbar::-webkit-scrollbar {
   margin: 80vh auto 0;
 }
 
-.baseDialog {
-  max-width: 400px;
-  height: 200px;
-  overscroll-behavior: contain;
-}
-
+.baseDialog,
 .menuDialog {
   width: 100%;
   max-width: 100%;
@@ -137,16 +135,47 @@ body.is-hideScrollbar::-webkit-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-.menuDialog::backdrop {
-  background-color: rgba(0, 0, 0, 0.85);
-}
+.baseDialog::-webkit-scrollbar,
 .menuDialog::-webkit-scrollbar {
   display: none;
+}
+
+.baseDialog_wrapper {
+  width: 100%;
+  height: calc(100% + 1px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.baseDialog_content {
+  width: 100%;
+  max-width: 400px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #fff;
+}
+.baseDialog_content_inner {
+  width: 100%;
+  height: 100%;
+  padding: 24px;
+  overflow: auto;
+  overscroll-behavior: contain;
+}
+.baseDialog_close {
+  margin-top: 16px;
+}
+
+.menuDialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.85);
 }
 .menuDialog_wrapper {
   width: 100%;
   height: calc(100% + 1px);
   padding: 24px;
+}
+.menuDialog_close {
+  margin-bottom: 24px;
 }
 .menuDialog_menu {
   display: grid;

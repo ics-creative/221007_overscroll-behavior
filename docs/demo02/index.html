@@ -13,18 +13,23 @@
       <p class="heading">ダイアログの例</p>
       <p>overscroll-behavior: contain;</p>
       <dialog class="baseDialog js-dialog-content">
-        <div>
-          <p>ダミーのテキストです。にわかにくっきり白いその羽根は前の方で起こって、それからしばらくしいんとしました。それもほんのちょっとの間、川と汽車との間から、ぼくずいぶん泳いだぞと言いながら暗い戸口を出ました。お前は夢の中でなしに、ほんとうのほんとうのほんとうのほんとうのさいわいをさがしに行く。坂の下に来てくださいその人はわらいました。そら鳥捕りは、こんどはぼくのお母さんだよカムパネルラはこおどりしました。ぼくはおっかさんが病気なんですかジョバンニは胸をおどらせて言いました。ただたくさんのくるみの木がほとんどいちめんに植えられて、心配していらっしゃるんですかいや、証明するに要るんだ。それはひる学校で見たわ姉は細い銀いろの空から、さっき見たようにぶっきらぼうに言いました。</p>
+        <div class="baseDialog_wrapper">
+          <div class="baseDialog_content">
+            <div class="baseDialog_content_inner">
+              <p>ダミーのテキストです。にわかにくっきり白いその羽根は前の方で起こって、それからしばらくしいんとしました。それもほんのちょっとの間、川と汽車との間から、ぼくずいぶん泳いだぞと言いながら暗い戸口を出ました。お前は夢の中でなしに、ほんとうのほんとうのほんとうのほんとうのさいわいをさがしに行く。坂の下に来てくださいその人はわらいました。そら鳥捕りは、こんどはぼくのお母さんだよカムパネルラはこおどりしました。ぼくはおっかさんが病気なんですかジョバンニは胸をおどらせて言いました。ただたくさんのくるみの木がほとんどいちめんに植えられて、心配していらっしゃるんですかいや、証明するに要るんだ。それはひる学校で見たわ姉は細い銀いろの空から、さっき見たようにぶっきらぼうに言いました。</p>
+              <button class="baseDialog_close js-dialog-close">閉じる</button>
+            </div>
+          </div>
         </div>
-        <button class="js-dialog-close">閉じる</button>
       </dialog>
       <button class="js-dialog-open">ダイアログを開く</button>
     </div>
     <div class="wrapper">
-      <p class="heading">モバイルメニューの例</p>
+      <p class="heading">ハンバーガーメニューの例</p>
       <p>overscroll-behavior: contain;</p>
       <dialog class="menuDialog js-menuDialog-content">
         <div class="menuDialog_wrapper">
+          <button class="menuDialog_close js-menuDialog-close"><span aria-label="メニューを閉じる">×</span></button>
           <nav>
             <ul class="menuDialog_menu">
               <li>
@@ -44,10 +49,9 @@
               </li>
             </ul>
           </nav>
-          <button class="js-menuDialog-close">閉じる</button>
         </div>
       </dialog>
-      <button class="js-menuDialog-open">モバイルメニューを開く</button>
+      <button class="js-menuDialog-open"><span aria-label="メニューを開く">≡</span></button>
     </div>
     <footer class="footer">
       <a href="../">目次へ戻る</a>
