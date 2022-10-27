@@ -1,10 +1,4 @@
-// demo02用のスタイル
-.baseDialog {
-  max-width: 400px;
-  height: 200px;
-  overscroll-behavior: contain;
-}
-
+.baseDialog,
 .menuDialog {
   width: 100%;
   max-width: 100%;
@@ -19,12 +13,43 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 
-  &::backdrop {
-    background-color: rgba(0, 0, 0, 0.85);
-  }
-
   &::-webkit-scrollbar {
     display: none;
+  }
+}
+
+// demo02用のスタイル
+.baseDialog {
+  &_wrapper {
+    width: 100%;
+    height: calc(100% + 1px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &_content {
+    width: 100%;
+    max-width: 400px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #fff;
+    &_inner {
+      width: 100%;
+      height: 100%;
+      padding: 24px;
+      overflow: auto;
+      overscroll-behavior: contain;
+    }
+  }
+  &_close {
+    margin-top: 16px;
+  }
+}
+
+.menuDialog {
+  &::backdrop {
+    background-color: rgba(0, 0, 0, 0.85);
   }
 
   &_wrapper {
@@ -32,7 +57,9 @@
     height: calc(100% + 1px);
     padding: 24px;
   }
-
+  &_close {
+    margin-bottom: 24px;
+  }
   &_menu {
     display: grid;
     grid-template-columns: 1fr;

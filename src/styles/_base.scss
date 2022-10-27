@@ -51,6 +51,10 @@ body {
   color: #424242;
   background-color: #fff;
 
+  &.is-openModal {
+    overflow: hidden;
+  }
+
   &.is-hideScrollbar {
     -ms-overflow-style: none;
 
